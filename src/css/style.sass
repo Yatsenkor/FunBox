@@ -1,0 +1,266 @@
+@font-face 
+    font-family: 'Exo2.0' 
+    src: url(../fonts/Exo2.0-Thin.otf)
+
+
+a 
+    text-decoration: none
+
+
+.content
+    background-image: url(../img/Pattern2x.png)
+    width: 100%
+    height: 100%
+
+
+.content__title
+    font-family: 'Exo2.0'
+    font-style: normal
+    font-weight: 250
+    font-size: 36px
+    text-align: center
+    color: #FFFFFF
+    text-shadow: 0px 1px 1px #000000
+    padding-top: 36px
+    z-index: 4
+
+  
+.item-group
+    display: flex
+    justify-content: center
+    align-items: center
+    
+
+
+.item
+    margin: 25px 80px 25px 0
+    .item:last-child
+        margin-right: 0
+
+
+
+
+.item-content
+   max-width: 320px
+   max-height: 480px
+   background-color: #fff 
+   background-image: url(../img/Photo.png)
+   background-position: center 208px
+   position: relative 
+   background-repeat: no-repeat
+   border-radius: 16px
+   border: 4px solid #1698D9
+   box-sizing: border-box
+   cursor: pointer 
+
+
+
+
+.item-content::after
+    content: ''
+    width: 40px
+    height: 70px
+    position: absolute
+    background-color: black
+    left: -14px
+    top: -28px
+    transform: rotate(45deg)
+    z-index: 3
+    background-image: url(../img/Pattern2x.png)
+    background-position: center
+    background-repeat: no-repeat
+
+
+.item-content::before
+    content: ''
+    width: 4px
+    height: 70px
+    position: absolute
+    left: 19px
+    top: -13px
+    background-color: #1698D9
+    transform: rotate(45deg)
+    z-index: 3
+
+
+.item-content:hover
+    border: 4px solid #2EA8E6
+
+
+.item-text
+    padding-left: 48px
+    padding-top: 21px
+    padding-bottom: 220px
+
+
+.item-text__subTitle
+    font-family: Trebuchet MS
+    font-size: 16px
+    color: #666666
+    padding-bottom: 5px
+
+
+.item-text__title
+    font-family: Trebuchet MS
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    color: #000000
+    padding-bottom: 5px
+
+
+.item-text__ingredients
+    font-family: Trebuchet MS
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    color: #000000
+
+
+.item-text__text   
+    font-family: Trebuchet MS
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    color: #666666
+    /* padding-bottom: 49px */
+    padding-top: 15px
+
+
+.item-weight
+    display: flex
+    justify-content: end
+    flex-direction: column
+    align-items:center
+    width: 80px
+    height: 80px
+    background-color: #1698D9
+    border-radius: 50%
+    margin-left: auto
+    margin-right: 16px
+    margin-bottom: 16px
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+.item-weight:hover
+    background-color: #2EA8E6
+
+
+.item-weight__mass
+    font-family: Trebuchet MS
+    font-size: 42px
+
+
+.item-weight__kg
+    font-family: Trebuchet MS
+    font-size: 22px
+
+
+.item-btn
+    padding-top: 15px
+    display: flex
+    flex-direction: column
+
+
+.item-btn__text,
+.item-description__text
+    font-family: Trebuchet MS
+    font-size: 13px
+    text-align: center
+    color: #FFFFFF
+
+
+.item-btn__btn
+    font-family: Trebuchet MS
+    font-size: 13px
+    color: #1698D9
+    border-bottom: 1px solid #1698D9
+
+
+.item-description
+    display: none
+
+
+.item-disabled
+    display: none
+
+
+.item-disabled__text
+    font-family: Trebuchet MS
+    font-size: 13px
+    text-align: center
+    color: #FFFF66
+
+
+.item__active .item-btn
+    display: none
+
+
+.item__active .item-description
+    display: block
+    padding-top: 15px
+
+
+.item__active .item-weight
+    background-color: #D91667
+
+
+.item__active .item-content
+    border: 4px solid #D91667
+
+
+.item__active .item-content::before
+    background-color: #D91667
+
+
+.item__active .item-weight:hover
+    background-color: #E52E7A
+
+
+.item__active .item-content:hover
+    border: 4px solid #E52E7A
+
+
+.item__disabled .item-weight
+    background-color: #B3B3B3
+
+
+.item__disabled .item-content
+    position: relative
+    border: 4px solid #B3B3B3
+    
+
+
+.item__disabled .item-wrapper
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color:#fff
+    z-index: 2
+    opacity: 0.4
+    visibility: visible
+    border-radius: 16px
+    border: 4px solid rgba(255, 255, 255, 0.4)
+    box-sizing: border-box
+
+
+.item__disabled .item-content::before
+    background-color: #B3B3B3
+
+
+.item__disabled .item-disabled
+    display: block
+    padding-top: 15px
+
+
+.item__disabled .item-description
+    display: none
+
+
+.item__disabled  .item-btn
+    display: none
+
